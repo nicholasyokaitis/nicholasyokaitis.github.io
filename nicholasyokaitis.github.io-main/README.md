@@ -1,1 +1,0 @@
-# nicholasyokaitis.github.io
