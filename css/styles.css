@@ -5787,6 +5787,8 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  max-height: 900px;
+
 }
 
 .carousel.pointer-event {
@@ -5797,12 +5799,20 @@ textarea.form-control-lg {
   position: relative;
   width: 100%;
   overflow: hidden;
+  max-height: 900px;
+
 }
 .carousel-inner::after {
   display: block;
   clear: both;
   content: "";
+  max-height: 900px;
+
 }
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  max-height: 500px;
+  }
 
 .carousel-item {
   position: relative;
@@ -5813,10 +5823,12 @@ textarea.form-control-lg {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  max-height: 900px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
+    max-height: 900;
   }
 }
 
